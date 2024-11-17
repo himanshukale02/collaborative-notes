@@ -1,3 +1,4 @@
+
 .navbar{
     display: flex;
     align-items: center;
@@ -73,4 +74,29 @@ body{
     background-color: rgb(125, 182, 188);
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.popup {
+    display: none; /* Initially hidden */
+    width: 300px;
+    height: 200px;
+    background-color: rgb(125, 182, 188);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixed to viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+.open-popup{
+    visibility:visible;
+}
+
+.popup #btn{
+    border-radius: 2px;
+    background-color:rgb(240, 235, 187) ;
 }

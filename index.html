@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Collaborative-Notes</title>
+    <link rel="icon" href="logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
     <!-- <style>
         .navbar{
@@ -20,9 +21,20 @@
             <p><a href="about.html">About</a></p>
             <p><a href="contact.html">Contact Us</a></p>
             <div class="add">
-               <input type="button" class="btn" value="Add Note" onclick="newNote('test button','test note2')"></input>
+               <input type="button" id="addPop" value="Add Note" onclick="openPopup()"></input>
             </div>
         </div>
+        <div class="popupC">
+            <div class="popup" id="pop">
+                <label for="ntitle">Title</label>
+                <input type="text" name="ntitle" id="ttl" placeholder="Note Title"><br>
+                <label for="noteC">Note Here</label>
+                <input type="text" name="noteC"><br>
+                <input id="Add" type="button" value="Add" onclick="newNote()">
+            </div>
+        </div>
+        
+        
         <div class="cardCon">
             <!-- <div class="cards">
                 <img src="bluebg.jpg" alt=""></img>
